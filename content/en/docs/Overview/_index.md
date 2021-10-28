@@ -3,36 +3,117 @@ title: "Overview"
 linkTitle: "Overview"
 weight: 1
 description: >
-  Here's where your user finds out if your project is for them.
+  Identifies goals and objectives of the Reference Architecture and describes the specific purpose
 ---
 
 {{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
+Identifies goals and objectives of the Reference Architecture and describes the specific purpose
 {{% /pageinfo %}}
 
 
-The Overview is where your users find out about your project. Depending on the size of your docset, you can have a separate overview page (like this one) or put your overview contents in the Documentation landing page (like in the Docsy User Guide). 
+<!--more-->
 
-Try answering these questions for your user in this page:
+## Definition
 
-## What is it?
+An authoritative source of information about a specific subject area that guides and constrains the instantiations of multiple architectures and solutions.
 
-Introduce your project, including what it does or lets you do, why you would use it, and its primary goal (and how it achieves it). This should be similar to your README description, though you can go into a little more detail here if you want.
+## A Reference Architecture comprises the following components
 
-## Why do I want it?
+- Introduction.  Identifies goals and objectives of the Reference Architecture and describes the specific purpose.
+- Discussion.  Provides the background and rationale for the content of the Reference Architecture.  Headings are appropriate to the content.
+- Principles.  High-level guidance for the entire Reference Architecture.
+- Reference Model.  A taxonomy of accepted concepts to describe capability.
+- Decision Frameworks.  Recommended combinations of Standards and Patterns for typical use cases based on the Reference Model.
+- Standards.  Descriptions of preferred data formats or interface specifications that support the Reference Architecture’s technical intent.
+- Patterns.  Descriptions of preferred technologies, designs and data formats that solve specific use cases.
 
-Help your user know if your project will help them. Useful information can include: 
+```mermaid
 
-* **What is it good for?**: What types of problems does your project solve? What are the benefits of using it?
+flowchart TB
 
-* **What is it not good for?**: For example, point out situations that might intuitively seem suited for your project, but aren't for some reason. Also mention known limitations, scaling issues, or anything else that might let your users know if the project is not for them.
+    A(Principals)
+    B(Reference Model)
+    C(Standards)
+    D(Patterns)
+    E(Decision Frameworks)
 
-* **What is it *not yet* good for?**: Highlight any useful features that are coming soon.
+    A --> C
+    B --> C
+    C --> D
+    C --> E
+    D --> E
+
+```
+
+## Why use reference Architectures?
+
+To facilitate multi-[site | vendor | organisation | *anything*] system creation and lifecycle support.
+
+- providing a common lexicon and taxonomy
+- providing a common (architectural) vision
+- providing modularization and complementary context
+
+Increase dynamic integration and achieve interoperability between many different and evolving systems.
+
+- Articulation of domain and realization concepts
+- Explicit modelling of functions and qualities above systems level
+- Explicit decisions about compatibility, upgrade and interchangeability
+
+To achieve increased complexity scope and size so that we may effectively create new products, product lines and product portfolios.
+
+- providing guidance, e.g. architecture principles and practices
+- providing an architecture baseline and an architecture blueprint
+- capturing and sharing (architectural) patterns
+
+## When to use Reference Architectures?
+
+Reference Architectures facilitate the step towards product family architecture and evolvability; this often coincides with multi-\* problems. Single System Architectures tend to fall short in addressing the bigger set of problems that emerge in multi-system domains.
+
+```mermaid
+
+  journey
+    title Reference Architecture
+    section Mono-*
+      mono-system design: 5: SA
+      mono-system architecture: 5: SA
+    section Multi-*
+      product family architecture: 5: RA
+      evolvable product family architecture: 5: RA
+
+```
+
+### Reference Architectures Elaborates Mission, Vision and Strategy
+
+```mermaid
+
+flowchart TB
+
+    A(mission)
+    B(vision)
+    C(strategy)
+    D[Reference Architecture]
+    E[Multiple Organizations]
+
+    F([Customer/Market])
+    G([Technology])
+
+    subgraph Principals
+        A --> B --> C
+    end
+
+
+    F --> |needs| D
+    G --> |opportunities| D
+    Principals --> |elaboration| D
+
+    D --->  | guidance | E
+
+```
 
 ## Where should I go next?
 
 Give your users next steps from the Overview. For example:
 
-* [Getting Started](/docs/getting-started/): Get started with $project
-* [Examples](/docs/examples/): Check out some example code!
+- [Getting Started](/docs/getting-started/): Get started with $project
+- [Examples](/docs/examples/): Check out some example code!
 

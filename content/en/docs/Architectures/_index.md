@@ -1,11 +1,10 @@
-
 ---
-title: "Examples"
-linkTitle: "Examples"
+title: "Reference Architectures"
+linkTitle: "Architectures"
 weight: 3
-date: 2017-01-05
+date: 2021-10-21
 description: >
-  See your project in action!
+  Reference Architectures
 ---
 
 {{% pageinfo %}}
