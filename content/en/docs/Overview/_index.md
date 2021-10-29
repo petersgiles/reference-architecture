@@ -10,9 +10,6 @@ description: >
 Identifies goals and objectives of the Reference Architecture and describes the specific purpose
 {{% /pageinfo %}}
 
-
-<!--more-->
-
 ## Definition
 
 An authoritative source of information about a specific subject area that guides and constrains the instantiations of multiple architectures and solutions.
@@ -42,6 +39,12 @@ flowchart TB
     C --> D
     C --> E
     D --> E
+
+click A "{{< ref "principals.md" >}}" "principals"
+click B "{{< ref "reference-models.md" >}}" "reference-models"
+click C "{{< ref "standards.md" >}}" "standards"
+click D "{{< ref "patterns.md" >}}" "patterns"
+click E "{{< ref "decision-framework.md" >}}" "decision-framework"
 
 ```
 
@@ -109,11 +112,3 @@ flowchart TB
     D --->  | guidance | E
 
 ```
-
-## Where should I go next?
-
-Give your users next steps from the Overview. For example:
-
-- [Getting Started](/docs/getting-started/): Get started with $project
-- [Examples](/docs/examples/): Check out some example code!
-
