@@ -7,6 +7,7 @@ description: >
 ---
 
 {{% pageinfo %}}
+
 A Reference model is an abstract framework for understanding significant relationships among the entities of [an] environment, and for the development of consistent standards or specifications supporting that environment. A reference model is based on a small number of unifying concepts and may be used as a basis for education and explaining standards to a non-specialist. A reference model is not directly tied to any standards, technologies, or other concrete implementation details, but it does seek to provide common semantics that can be used unambiguously across and between different implementations.
 {{% /pageinfo %}}
 
