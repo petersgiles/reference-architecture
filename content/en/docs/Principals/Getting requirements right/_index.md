@@ -1,7 +1,7 @@
 ---
 title: "Getting requirements right"
 linkTitle: "Getting requirements right"
-weight: 150
+weight: 100
 date: 2021-11-18
 description: >
  Avoiding the most common traps.

@@ -1,7 +1,7 @@
 ---
 title: "How to Run Software Development"
 linkTitle: "How to Run Software Development"
-weight: 150
+weight: 800
 date: 2021-11-18
 description: >
  How to Run a Software Development Organization in Internet Time and Not Go Crazy.
@@ -9,18 +9,18 @@ description: >
 
 ## Intended Audience
 
-Every employee of Company X.
+Every employee of The Team.
 
 ## Description of the problem
 
-We make the following observations about Company X:
+We make the following observations about The Team:
 
 There is no clear, articulated roadmap for
 
-1. synthesizing a coherent vision
-1. turning that vision into a product definition
-1. crystallizing the definition into an implementation and
-1. delivering the solution.
+- synthesizing a coherent vision
+- turning that vision into a product definition
+- crystallizing the definition into an implementation and
+- delivering the solution.
 
 There is no clear understanding of responsibilities and therefore the schedule slips on the fuzzy front-end. The vision is fuzzy, and solutions are fuzzy vs. this fuzzy vision. It is unclear how a vision takes form. Who decides the requirements and how these relate to the vision? Who decides the specifications? Who signs off? Who is critical path when? Who makes the cost/benefit calls, both in terms of real and opportunity costs? How do we drive progress on research-oriented efforts required to support our long-term vision? How are releases timed and managed along the way towards full releases? How are resources leveled against development efforts? And how are finer-grained questions answered during development of the product?
 
@@ -34,24 +34,24 @@ This document outlines the process, called the Product Pipeline, including respo
 
 ## Goals
 
-The overriding goal of this document is to articulate the means by which Company X will efficiently create wildly successful products.
+The overriding goal of this document is to articulate how The Team will efficiently create successful products.
 
-For each member of Company X, from President to Janitor, the goal is for everyone to understand at any moment in time the following
+For each member of The Team, from President to Janitor, the goal is for everyone to understand at any moment in time the following
 
-1. What is the driving vision of the current efforts?
+- What is the driving vision of the current efforts?
 2. Where we are in the process?
-3. Who is critical path now?
+3. Who is in the critical path now?
 4. What's happening next, and especially what is my next responsibility is?
 5. What do I have authority to decide and what do I not?
 6. What is my role?
 7. How I can get my great idea into the pipeline for consideration?
 8. How are feature additions considered and prioritized --that is, how will ideas be judged and compared vs. other great ideas?
 9. How, if I do my job well, is my contribution likely to result in the success of the project, the team, and the company?
-10. How do I decide which of my current tasks have highest priority?
+10. How do I decide which of my current tasks have the highest priority?
 
 For the company, goals include the following:
 
-1. Maximize efficiency within the organization (reduction of meetings, eliminate wasted time on the front-end)
+- Maximize efficiency within the organization (reduction of meetings, eliminate wasted time on the front-end)
 2. Get the finished product defined and delivered effectively.
 3. Streamline and clarify the decision-making process
 4. Allow the company to operate in "Internet Time"
@@ -60,11 +60,11 @@ For the company, goals include the following:
 
 Short term, this document will be a success if progress occurs even in the absence of direct and continual managerial attention.
 
-Long term, this document will be considered a success if the following conditions are substantially true during the Leavenworth and EastSound releases:
+Long term, this document will be considered a success if the following conditions are substantially true during the next releases:
 
-1. There is no wasted time on the fuzzy front end.
-2. These releases are released on time.
-3. The releases are considered by management to have been successfully released against a coherent vision.
+- There is no wasted time on the fuzzy front end.
+- These releases are released on time.
+- The releases are considered by management to have been successfully released against a coherent vision.
 
 ## Glossary
 
@@ -84,40 +84,30 @@ Long term, this document will be considered a success if the following condition
 
 ### Goals
 
-1. Efficiently gather great ideas
-1. Distill them to the winning few
-1. Check against initiatives or change the initiatives
-1. Maximize cost/benefit
-1. Articulate the characteristics of the solutions as specifically and clearly as possible
+- Efficiently gather great ideas
+- Distill them to the winning few
+- Check against initiatives or change the initiatives
+- Maximize cost/benefit
+- Articulate the characteristics of the solutions as specifically and clearly as possible
 
 ### A word on the problem
 
-We are a small company, with very limited resources, living in Internet
-time. Our window of opportunity is exceedingly short, and demands that
-we maintain laser-precision focus on delivering exactly what the market
-needs in the shortest possible time. Understanding our market and
-articulating its needs is a prerequisite to success in any industry, but
-for us, the prerequisite is immediate and urgent.
+A small team, with very limited resources, living in "Internet time". Our window of opportunity is exceedingly short, and demands that we maintain laser-precision focus on delivering exactly what the market needs in the shortest possible time. Understanding our market and articulating its needs is a prerequisite to success in any industry, but for us, the prerequisite is immediate and urgent.
 
-The problem of figuring out where we should spend our precious resources
-and time is, however, difficult. It is a mixture of efficient process,
-of state-of-mind, of prescience and openness and circumspection; it is
-part art and part science and no small amount of luck. Likewise,
-delivery against this definition is also part art, and part science
-(although not as much luck). However, by far the larger determining
-factor is creating the definition. (See Appendix A, The Five Habits of
-Highly Effective Company X Marketing Professionals.)
+The problem of figuring out where we should spend our precious resources and time is, however, difficult. It is a mixture of efficient process, of state-of-mind, of prescience and openness and circumspection; it is part art and part science and no small amount of luck. Likewise, delivery against this definition is also part art, and part science (although not as much luck). However, by far the larger determining factor is creating the definition. 
+
+(See Appendix A, The Five habits of Highly Effective The Team Marketing Professionals.)
 
 ## Execution
 
 The PM will enact the following process:
 
-1. Discovery
-1. Refinement
-1. Validation, Articulation, and Prioritization
-1. Description
-1. Estimation
-1. Authorization
+- Discovery
+- Refinement
+- Validation, Articulation, and Prioritization
+- Description
+- Estimation
+- Authorization
 
 ### Discovery
 
@@ -153,21 +143,21 @@ The PM, with feedback from the submitter, will answer and record the following i
 
 ### Articulation, Validation and Prioritization
 
-1. Once the idea is refined, it needs to be validated. This would be done
-1. by the management group, including representatives from Marketing
-1. Management, Admin, Development, and Sales. The PM would present the
-1. arguments and documentation described above and the goal of these
-1. meetings will be to arrange a prioritization across all solutions on
-1. the list. This will be accomplished in the manner of version 1.0. More
-1. specifically, the PM will present the whole list and do the following:
-    1. Mark items they deem of very low priority. In the interest of efficiency, these will be only lightly touched on.
-    2. Describe all others.
-    3. Send the parties off to rank order the remaining items on their own.
-    4. Call another meeting go over everyone's top 3 and debate
-    5. Score each item, creating a ranked list.
-    6. Publish the results.
+- Once the idea is refined, it needs to be validated. This would be done
+- by the management group, including representatives from Marketing
+- Management, Admin, Development, and Sales. The PM would present the
+- arguments and documentation described above and the goal of these
+- meetings will be to arrange a prioritization across all solutions on
+- the list. This will be accomplished in the manner of version -0. More
+- specifically, the PM will present the whole list and do the following:
+  - Mark items they deem of very low priority. In the interest of efficiency, these will be only lightly touched on.
+  - Describe all others.
+  - Send the parties off to rank order the remaining items on their own.
+  - Call another meeting go over everyone's top 3 and debate
+  - Score each item, creating a ranked list.
+  - Publish the results.
 
-Every effort should be made to come to consensus on this list. If this proves impossible, the PM will make the final call. The resulting list is the definition of the next release/releases of the product.
+Every effort should be made to come to a consensus on this list. If this proves impossible, the PM will make the final call. The resulting list is the definition of the next release/releases of the product.
 
 ### Description
 
@@ -183,41 +173,43 @@ As part of the estimation process, development will begin architectural design w
 
 The PM will host a final authorization meeting in which all the stake-holders (management, PM) are presented with the Development Authorization document. This document will contain the following information (note that responsible parties are shown at the end in brackets):
 
-1. Release details (internal name, proposed version, release theme)
-1. PM
+- Release details (internal name, proposed version, release theme)
+- PM
 >
-1. Date or Feature Driven PM, with feedback from MGT
+- Date or Feature Driven PM, with feedback from MGT
 >
-1. Context within a multi-release plan (what's been done, what's
-1. coming). This section will contain any forward-looking statements
-1. about where feature-sets might go in order for the developers to plan
-1. ahead in their designs PM
+- Context within a multi-release plan (what's been done, what's
+- coming). This section will contain any forward-looking statements
+- about where feature-sets might go in order for the developers to plan
+- ahead in their designs PM
 >
-1. Overview of feature additions, with rank ordering (essentially, a copy
-1. of the whole Feature Spreadsheet, listing both those features being
-1. added as well as those that aren't) PM
+- Overview of feature additions, with rank ordering (essentially, a copy
+- of the whole Feature Spreadsheet, listing both those features being
+- added as well as those that aren't) PM
 >
-1. NSSPs PM, Development Leads
+- NSSPs PM, Development Leads
 >
-1. +/- 50% schedule Director of Development
+- +/- 50% schedule Director of Development
 >
-1. Resource estimates DL, DD
+- Resource estimates DL, DD
 >
-1. Risk items and Risk Management Spreadsheet Risk Officer
+- Risk items and Risk Management Spreadsheet Risk Officer
 >
-1. Signoffs
+- Signoffs
+
+---
 
 #  Definition: Translate what we're building into a definition
 
 ## Goals
 
-1. Translate the specifications into implementation plans (architecture,
-1. detailed design).
+- Translate the specifications into implementation plans (architecture,
+- detailed design).
 >
-1. Articulate the details of the solution within the product so that
-1. development can accurately refine the estimate
+- Articulate the details of the solution within the product so that
+- development can accurately refine the estimate
 >
-1. Generate a +/- 10% estimate of time to development
+- Generate a +/- 10% estimate of time to development
 
 ## Execution
 
@@ -243,9 +235,9 @@ Software development, and therefore estimation thereof, is inherently uncertain.
 
 The trick then is to 
 
-1. make the range as accurate as possible, 
-1. anticipate and quantify uncertainty and unplanned events and 
-1. revise the estimate as the range narrows and 
+- make the range as accurate as possible, 
+- anticipate and quantify uncertainty and unplanned events and 
+- revise the estimate as the range narrows and 
 d) not substitute wishful thinking for objective and rational estimation techniques.
 
 To accomplish a) and d), we will utilize three different techniques to
@@ -310,12 +302,12 @@ earlier, for appropriate documents.
 
 ## Goals
 
-1. Deliver what was specified in the above step according to the estimate
-1. Enforce stability
-1. Discover any bug within 3 days of it being written
-1. Accurate progress tracking and management
-1. Shortest possible delivery date
-1. High-quality output
+- Deliver what was specified in the above step according to the estimate
+- Enforce stability
+- Discover any bug within 3 days of it being written
+- Accurate progress tracking and management
+- Shortest possible delivery date
+- High-quality output
 
 ## Execution
 
@@ -330,7 +322,7 @@ schedule time) will be approved by the CRC and the PM.
 ### Iterative development
 
 Iterative development refers to a philosophy guiding software
-development which emphasizes stability during the process. At Company X,
+development which emphasizes stability during the process. At The Team,
 we will implement iterative development by developing in the following
 ways:
 
@@ -453,13 +445,13 @@ Note that once entered into SourceSafe, a change to any of these
 documents must be accompanied by a comment describing the change and the
 reason for the change.
 
-1. Schedule - DD
-1. NSSP - PM, Lead Developer
-1. Development Authorization - DD
-1. Risk Management Spreadsheet - Risk Officer
-1. Who's in the Hot Seat DD
-1. Glide Path - DD
-1. Feature Spreadsheet PM
+- Schedule - DD
+- NSSP - PM, Lead Developer
+- Development Authorization - DD
+- Risk Management Spreadsheet - Risk Officer
+- Who's in the Hot Seat DD
+- Glide Path - DD
+- Feature Spreadsheet PM
 
 #  General Process Issues
 
@@ -486,14 +478,14 @@ making them twice. On the other hand, the process can't be onerous or
 difficult. Therefore, we'll implement the following with respect to
 meetings:
 
-1. One person will be designated as the keeper of the notes for each
-    1. meeting at the discretion of the meeting host (the meeting host is
-    1. the one who calls and schedules the meeting). This person will
-    1. write on standard paper (as opposed to DayTimer or other paper)
-    1. any notes on reasoning and arguments. The goal here is to be able
-    1. to reconstruct why a decision was made 1 year hence.
+- One person will be designated as the keeper of the notes for each
+    - meeting at the discretion of the meeting host (the meeting host is
+    - the one who calls and schedules the meeting). This person will
+    - write on standard paper (as opposed to DayTimer or other paper)
+    - any notes on reasoning and arguments. The goal here is to be able
+    - to reconstruct why a decision was made 1 year hence.
 2. These notes will be kept by the owner of the project (typically the
-    1. PM or perhaps the DD).
+    - PM or perhaps the DD).
 
 The meeting host will send (and keep a copy of) an email to meeting
 participants after the meeting outlining decisions made. These can be
@@ -541,7 +533,7 @@ However, there may be times when change is necessary.
 
 To allow for and control this, the following process will be observed:
 
-1. A Feature Idea form will be completely filled out by the originator
+- A Feature Idea form will be completely filled out by the originator
     of the request (this could be Marketing or Sales) and submitted via
     email to the PM. On the FI will be an indication of the time-frame
     of the need: that is, if the FI needs to be considered for the
@@ -567,7 +559,7 @@ To allow for and control this, the following process will be observed:
 If the need is urgent enough and the FI is Category 3, the following
 process will be observed:
 
-1. An Emergency Management Change Order will be signed by all senior
+- An Emergency Management Change Order will be signed by all senior
     company executives. This is shown in Appendix E. It essentially
     orders Development to stop development on the current release, tie
     up any loose ends, and begin estimation based on the specifications
@@ -584,9 +576,9 @@ process will be observed:
     functionality along with the originally slated release
     functionality).
 
-#  Appendix A: Mind Set (or, "The Five Habits of Highly Effective Company X Marketing Professionals")
+#  Appendix A: Mind Set (or, "The Five Habits of Highly Effective The Team Marketing Professionals")
 
-The first Habit of Highly Effective Company X Product Management is summed up by Clint Eastwood: "A company's got to know its limitations." Ours are time and resources, as discussed above.
+The first Habit of Highly Effective The Team Product Management is summed up by Clint Eastwood: "A company's got to know its limitations." Ours are time and resources, as discussed above.
 
 Therefore the market need must be understood to the degree that it can
 
@@ -689,10 +681,10 @@ Initiatives:
     hired.
 
 [^2]: In the absence of this being one person's job, this becomes all
-    1. of our job. This will be helped by long-range brain-storming
-    1. sessions as done recently by MJ and JL, by addressing in the
-    1. bi-weekly company meetings, and by addressing in select
-    1. development meetings.
+    - of our job. This will be helped by long-range brain-storming
+    - sessions as done recently by MJ and JL, by addressing in the
+    - bi-weekly company meetings, and by addressing in select
+    - development meetings.
 
 [^3]: Boehm, Barry W., and Philip N. Papaccio. 1998. "Understanding and
     Controlling Software Costs." IEEE Transactions on Software

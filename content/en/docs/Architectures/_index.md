@@ -1,7 +1,7 @@
 ---
 title: "Reference Architectures"
 linkTitle: "Architectures"
-weight: 50
+weight: 5000
 date: 2021-10-21
 description: >
   Reference Architectures

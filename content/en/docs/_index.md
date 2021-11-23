@@ -40,11 +40,11 @@ flowchart TB
     C --> E
     D --> E
 
-click A "{{< ref "principals.md" >}}" "principals"
-click B "{{< ref "reference-models.md" >}}" "reference-models"
-click C "{{< ref "standards.md" >}}" "standards"
-click D "{{< ref "patterns.md" >}}" "patterns"
-click E "{{< ref "decision-framework.md" >}}" "decision-framework"
+click A "{{< ref "Principals" >}}" "principals"
+click B "{{< ref "Reference Models" >}}" "reference-models"
+click C "{{< ref "Standards" >}}" "standards"
+click D "{{< ref "Patterns" >}}" "patterns"
+click E "{{< ref "Decision Framework" >}}" "decision-framework"
 
 ```
 

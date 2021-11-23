@@ -1,7 +1,7 @@
 ---
 title: "Principals"
 linkTitle: "Principals"
-weight: 4
+weight: 100
 description: >
   High-level guidance for the entire Reference Architecture.
 

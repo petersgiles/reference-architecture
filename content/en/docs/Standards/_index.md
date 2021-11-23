@@ -1,7 +1,7 @@
 ---
 title: "Standards"
 linkTitle: "Standards"
-weight: 4
+weight: 300
 description: >
  Descriptions of preferred data formats or interface specifications that support the Reference Architecture’s technical intent.
 ---
