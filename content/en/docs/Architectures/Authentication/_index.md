@@ -40,7 +40,7 @@ description: >
 
 - Most modern applications have the potential to simplify authentication logic; these types don’t provide mechanisms for managing the identity lifecycle of an entity. Figure 1 shows that shifting the authentication layer outside the traditional model means that the application doesn’t hold onto sensitive data, therefore implies federation.
 
- {{< figure src="figure01.png" title="Figure 1: Federation" >}}
+{{< figure src="figure01.png" title="Figure 1: Federation" >}}
 
 - In technology, Federation implies linking a person’s electronic representation of an identity and attributes stored across multiple distinct systems. This provides collaboration capabilities across multiple applications that may be distributed across organisations, geographies or business units.
 

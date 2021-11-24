@@ -4,7 +4,7 @@ linkTitle: "How to Run Software Development"
 weight: 800
 date: 2021-11-18
 description: >
- How to Run a Software Development Organization in Internet Time and Not Go Crazy.
+ How to Run a Software Development Team and Not Go Crazy.
 ---
 
 ## Intended Audience
@@ -39,22 +39,22 @@ The overriding goal of this document is to articulate how The Team will efficien
 For each member of The Team, from President to Janitor, the goal is for everyone to understand at any moment in time the following
 
 - What is the driving vision of the current efforts?
-2. Where we are in the process?
-3. Who is in the critical path now?
-4. What's happening next, and especially what is my next responsibility is?
-5. What do I have authority to decide and what do I not?
-6. What is my role?
-7. How I can get my great idea into the pipeline for consideration?
-8. How are feature additions considered and prioritized --that is, how will ideas be judged and compared vs. other great ideas?
-9. How, if I do my job well, is my contribution likely to result in the success of the project, the team, and the company?
-10. How do I decide which of my current tasks have the highest priority?
+- Where we are in the process?
+- Who is in the critical path now?
+- What's happening next, and especially what is my next responsibility is?
+- What do I have authority to decide and what do I not?
+- What is my role?
+- How I can get my great idea into the pipeline for consideration?
+- How are feature additions considered and prioritized --that is, how will ideas be judged and compared vs. other great ideas?
+- How, if I do my job well, is my contribution likely to result in the success of the project, the team, and the team?
+- How do I decide which of my current tasks have the highest priority?
 
-For the company, goals include the following:
+For the team, goals include the following:
 
 - Maximize efficiency within the organization (reduction of meetings, eliminate wasted time on the front-end)
-2. Get the finished product defined and delivered effectively.
-3. Streamline and clarify the decision-making process
-4. Allow the company to operate in "Internet Time"
+- Get the finished product defined and delivered effectively.
+- Streamline and clarify the decision-making process
+- Allow the team to operate with Agility
 
 ## Success Criteria
 
@@ -386,7 +386,7 @@ development area, as will the Glide Path and Who's in the Hot Seat Now.
 
 The ship date slips when a critical path milestone date is passed
 without completion. The DD will issue an email to all department heads
-alerting the company to the slip, along with an explanation.
+alerting the team to the slip, along with an explanation.
 
 #### Defect tracking and triage
 
@@ -525,7 +525,7 @@ product stability, testing, personnel assignments and training are taken
 into account, a change done later than design is typically between 50
 and 200 times more costly than if it's done during design[^3].
 
-Clearly, it is in the best interest of the company to control change
+Clearly, it is in the best interest of the team to control change
 during the delivery phase of the pipeline and to enforce, as much as
 possible, the early and complete specification of the product.
 
