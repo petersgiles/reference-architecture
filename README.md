@@ -51,8 +51,12 @@ You can find out more about how to install Hugo for your environment in our
 
 Once you've made your working copy of the site repo, from the repo root folder, run:
 
-```
+```bash
 hugo server
+```
+
+```bash
+hugo server --disableFastRender --environment=dev --bind "0.0.0.0"
 ```
 
 ## Running a container locally
