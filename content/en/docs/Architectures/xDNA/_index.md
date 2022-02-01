@@ -8,10 +8,11 @@ description: >
 ---
 
 
-## Introduction
+## xDNA Building Blocks
 
 ```mermaid
 erDiagram
+          SITE ||--o{ SITE : "hierachy"
           SITE ||--o{ GEOMETRY : "has"
 
           SITE ||..|{ EQUIPMENT : "has"
@@ -25,8 +26,10 @@ erDiagram
           ASSEMBLY ||--o{ COMPONENT : "has"
 
           SITE ||..|{ PERSON : "has"
+          PERSON ||--o{ PERSON : "hierachy"
           PERSON ||..o{ ROLE : "has"
-          ROLE ||..o{ QUALIFICATION : "has"
+          PERSON ||..o{ QUALIFICATION : "has"
+          ROLE ||..o{ QUALIFICATION : "requires"
           QUALIFICATION ||--|| TAG : "is a"
           QUALIFICATION ||--o{ EQUIPMENT : "is for"
 
