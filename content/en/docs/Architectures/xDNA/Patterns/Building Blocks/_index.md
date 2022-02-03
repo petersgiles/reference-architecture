@@ -11,7 +11,8 @@ description: >
 
 ```mermaid
 erDiagram
-          SITE ||--o{ SITE : "hierachy"
+
+          SITE }|--|{ SITE : "n-hierachy"
           SITE ||--o{ GEOMETRY : "has"
           SITE ||..|{ EQUIPMENT : "has"
 
@@ -21,22 +22,24 @@ erDiagram
           ASSET ||--o{ CLASSIFICATION : "has"
 
           CLASSIFICATION ||--|| TAG : "is a"
-          TAG }|--|{ TAG : hierachy
+          TAG }|--|{ TAG : n-hierachy
           ASSET ||--o{ ASSEMBLY : "has"
 
-          ASSEMBLY ||--|{ ASSEMBLY : "hierachy"
+          ASSEMBLY }|--|{ ASSEMBLY : "n-hierachy"
           ASSEMBLY ||--o{ COMPONENT : "has"
 
-          SITE ||..|{ PERSON : "has"
-          PERSON ||--o{ PERSON : "hierachy"
-          PERSON ||..o{ ROLE : "has"
-          PERSON ||..o{ QUALIFICATION : "has"
+          SITE ||..|{ IDENTITY : "has"
+          IDENTITY }|--|{ IDENTITY : "n-hierachy"
+          IDENTITY ||..o{ ROLE : "has"
+          IDENTITY ||..o{ QUALIFICATION : "has"
 
-          ROLE ||--o{ ROLE : "hierachy"
+          ROLE }|--|{ ROLE : "n-hierachy"
           ROLE ||..o{ QUALIFICATION : "requires"
 
-          QUALIFICATION ||--o{ QUALIFICATION : "hierachy"
+          QUALIFICATION }|--|{ QUALIFICATION : "n-hierachy"
           QUALIFICATION ||--|| TAG : "is a"
           QUALIFICATION ||--o{ EQUIPMENT : "is for"
+
+          
 
 ```

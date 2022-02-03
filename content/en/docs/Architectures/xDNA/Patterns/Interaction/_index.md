@@ -14,10 +14,10 @@ erDiagram
 
         ME ||--o{ IDENTITY : "has"
         IDENTITY||--|{ SYSTEM-ROLE : "has"
-        IDENTITY||--o{ TASK : "performs"
+        IDENTITY||--o{ TASK : "requests"
         
-        SYSTEM ||--|{ SYSTEM-ROLE : "has"
-        SYSTEM ||--|{ JOB : "invokes"
+        SYSTEM ||--|{ SYSTEM-ROLE : "defines"
+        SYSTEM ||--|{ JOB : "schedules"
         SYSTEM ||--|{ OPERATION : "has"
                 
         SYSTEM-ROLE ||--o{ SYSTEM-ROLE : "hierachy"
@@ -27,7 +27,7 @@ erDiagram
         OPERATION ||--|{ FUNCTION : "has"
 
         TASK ||--|{ OPERATION : "invokes"
-        JOB ||--|{ TASK : "performs"
+        JOB ||--|{ TASK : "requests"
         
 
 ```
