@@ -13,20 +13,7 @@ description: >
 erDiagram
 
           SITE }|--|{ SITE : "n-hierachy"
-          SITE ||--o{ GEOMETRY : "has"
-          SITE ||..|{ EQUIPMENT : "has"
 
-          EQUIPMENT ||--|| ASSET : "is a"    
-
-          ASSET ||--o{ ASSET-CONFIGURATION : "has"
-          ASSET ||--o{ CLASSIFICATION : "has"
-
-          CLASSIFICATION ||--|| TAG : "is a"
-          TAG }|--|{ TAG : n-hierachy
-          ASSET ||--o{ ASSEMBLY : "has"
-
-          ASSEMBLY }|--|{ ASSEMBLY : "n-hierachy"
-          ASSEMBLY ||--o{ COMPONENT : "has"
 
           SITE ||..|{ IDENTITY : "has"
           IDENTITY }|--|{ IDENTITY : "n-hierachy"
@@ -37,9 +24,41 @@ erDiagram
           ROLE ||..o{ QUALIFICATION : "requires"
 
           QUALIFICATION }|--|{ QUALIFICATION : "n-hierachy"
-          QUALIFICATION ||--|| TAG : "is a"
-          QUALIFICATION ||--o{ EQUIPMENT : "is for"
+          QUALIFICATION ||--o{ EQUIPMENT : "is for"  
 
+          SITE ||--o{ GEOMETRY : "has"
+          GEOMETRY ||--|{ SEGMENT : "has"
+          SEGMENT ||--o{ GEOSPATIAL : "has"
           
+          SITE ||..|{ EQUIPMENT : "has"
+          CLASSIFICATION ||--|| TAG : "is a"
+          TAG }|--|{ TAG : n-hierachy
+
+          ASSET ||--|| ASSEMBLY : "instance"
+          ASSET ||--o{ CLASSIFICATION : "has"
+          ASSET ||--|| SEGMENT : "located"
+          ASSET ||--o{ ASSET-CONFIGURATION : "has"
+
+
+          ASSEMBLY ||--o{ COMPONENT : "has"
+          ASSEMBLY }|--|{ ASSEMBLY : "n-hierachy"
+
+          ASSEMBLY ||--|| EQUIPMENT : "is"
+
+ 
+
+                    
 
 ```
+
+## Equipment
+
+A virtual description of an Asset class
+
+## Assembly
+
+A digital template used to describe as Asset.
+
+## Asset
+
+A digital twin of a physical Assembly
