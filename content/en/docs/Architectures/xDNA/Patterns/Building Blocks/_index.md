@@ -12,14 +12,26 @@ description: >
 ```mermaid
 erDiagram
 
+          OWNER ||--|{ ASSET : "aquires & disposes"
+          OWNER ||--o{ SITE : "is a"
+          OWNER ||--o{ ORGANISATION : "is a"
+ 
+
+```
+
+
+
+```mermaid
+erDiagram
+
           SITE }|--|{ SITE : "n-hierachy"
+          ROLE }|--|{ SITE : "access"
 
-
-          SITE ||..|{ IDENTITY : "has"
           IDENTITY }|--|{ IDENTITY : "n-hierachy"
           IDENTITY ||..o{ ROLE : "has"
           IDENTITY ||..o{ QUALIFICATION : "has"
 
+         
           ROLE }|--|{ ROLE : "n-hierachy"
           ROLE ||..o{ QUALIFICATION : "requires"
 
@@ -29,7 +41,7 @@ erDiagram
           SITE ||--o{ GEOMETRY : "has"
           GEOMETRY ||--|{ SEGMENT : "has"
           SEGMENT ||--o{ GEOSPATIAL : "has"
-          
+
           SITE ||..|{ EQUIPMENT : "has"
           CLASSIFICATION ||--|| TAG : "is a"
           TAG }|--|{ TAG : n-hierachy
