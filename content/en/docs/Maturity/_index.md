@@ -10,65 +10,91 @@ description: >
 ## Overview
 
 Broadly speaking, these factors contribute to four critical areas of modern software engineering:
-• Continuous Integration/Deployment – automatically validate & deploy new code, build a single package for each path-to-production chain, etc.
-• Monitoring/Observability – primarily through the focus on logs.
-• Scalability – enable applications to support dynamic load increases through resource addition (and vice-versa), and by externalizing the system state & configuration.
-• Technical Debt Management – through improved build/dependency debt management, and the emphasis on loosely-coupled architectures.
+
+- Continuous Integration/Deployment
+  - Automatically validate & deploy new code
+  - Build a single package for each path-to-production chain, etc.
+- Monitoring/Observability – primarily through the focus on logs.
+- Scalability
+  - enable applications to support dynamic load increases through resource addition (and vice-versa), 
+  - externalizing the system state & configuration.
+- Technical Debt Management
+  - through improved build/dependency debt management
+  - emphasis on loosely-coupled architectures.
+
 Solution Teams that demonstrate a good understanding of these concepts and allocate time and resources to addressing them in their product development are good candidates for strategic partnership.
-First Pass Assessment Factors
 
-Discussing these factors can reveal how prepare a solution is for multiple customer production level operations
+## First Pass Assessment Factors
 
-## Factor Description
+Discussing these factors can reveal how prepared a solution is for multi-tennanted operation.
 
-|#|Factor  |Description |
-|--------------|----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-|I|Codebase|There should be exactly one codebase for a deployed service withthe codebase being used for many deployments.|
-|II  |Dependencies |All dependencies should be declared, with no implicit reliance onsystem tools or libraries.|
-|III |Config  |Configuration that varies between deployments should be stored inthe environment.|
-|IV  |Backing services  |All backing services are treated as attached resources andattached and detached by the execution environment.|
-|V|Build, release, run |The delivery pipeline should strictly consist of build, release,run. |
-|VI  |Processes |Applications should be deployed as one or more stateless processeswith persisted data stored on a backing service.|
-|VII |Port binding |Self-contained services should make themselves available to otherservices by specified ports. |
+|#|Factor|Description|
+|--|--|--|
+|I|Codebase|There should be exactly one codebase for a deployed service with the codebase being used for many deployments.|
+|II  |Dependencies |All dependencies should be declared, with no implicit reliance on system tools or libraries.|
+|III |Config  |Configuration that varies between deployments should be stored in the environment.|
+|IV  |Backing services  |All backing services are treated as attached resources and attached and detached by the execution environment.|
+|V|Build, release, run |The delivery pipeline should strictly consist of build, release, run. |
+|VI  |Processes |Applications should be deployed as one or more stateless processes with persisted data stored on a backing service.|
+|VII |Port binding |Self-contained services should make themselves available to other services by specified ports. |
 |VIII|Concurrency  |Concurrency is advocated by scaling individual processes.|
-|IX  |Disposability|Fast startup and shutdown are advocated for a more robust andresilient system. |
+|IX  |Disposability|Fast startup and shutdown are advocated for a more robust and resilient system. |
 |X|Dev/Prod parity|All environments should be as similar as possible.  |
-|XI  |Logs |Applications should produce logs as event streams and leave theexecution environment to aggregate. |
-|XII |Admin Processes|Any needed admin tasks should be kept in source control andpackaged with the application.|
+|XI  |Logs |Applications should produce logs as event streams and leave the execution environment to aggregate. |
+|XII |Admin Processes|Any needed admin tasks should be kept in source control and packaged with the application.|
 |XIII|Observable|Apps should provide visibility about current health and metrics |
-|XIV |Schedulable  |Applications should provide guidance on expected resourceconstraints. i.e. Kubernetes lets you configure request limits for thecontainers |
+|XIV |Schedulable  | Applications are documented with the expected resource constraints. i.e. Kubernetes lets you configure request limits for the containers |
 |XV  |Upgradable|Apps must upgrade data formats from previous generations |
-|XVI |Least privilege|Containers and Services should be running with the leastprivilege. Every permission you allow should be thought of as a potentialattack |
+|XVI |Least privilege|Containers and Services should be running with the least privilege. Every permission you allow should be thought of as a potential attack |
 |XVII|Auditable |Know what, when, who, and where for all critical operations|
-|XVIII |Securable |Identity, Network, Scope, Certificates - Protect your app andresources from the outsiders|
+|XVIII |Securable |Identity, Network, Scope, Certificates - Protect your app and resources from the outsiders|
 |XIX |Measurable|Application usage should be measurable for quota or chargebacks |
 
-## Examples of Good candidates for D2MSE
 
-A vendor who has had a stable product for some time and is used by a few customers reliably.
+## Questions
 
-They can create new instances of their service for new customers quickly and can recover from chaos and disaster quickly and reliably. This process is scripted for reliability and repeatability. Configuration is managed in the deployment environment.
+### Factor I (Codebase)
 
-There are clearly understood and monitored logging features that are streamed to an operations dashboard.
-They have good relationships with their current customers and are now finding that the popularity of their product necessitates a bigger commitment of operational resources.  They know how to instantiate more instances of their product and are keen to leverage our expertise at running environments to let them focus on providing improved features for their customers.
+There should be exactly one codebase for a deployed service with the codebase being used for many deployments.
 
-There is a product team with members who have been involved since the product’s inception. They are adding new features but also burning down their technical debt. They are aware of the compromises they have made on the journey to market and have spent some time formulating plans to address these issues. They understand the underlying technologies they have built their system on and monitor those technologies for security advisories and other maintenance issues. They actively patch and upgrade their services and platforms to minimise risk to their customer base.
+- [ ] Do you have a single codebase that you deploy multiple times.
+- [ ] Are customer specific one-of features maintained in their own code base and deployed as modules.
 
-## Examples of Poor candidates for D2MSE
+### Factor II (Dependencies)
 
-The product is completely new and hasn’t been used in a production environment by any customer. The project to create the software may still be underway and features are being presented to the project sponsor at a rapid pace. The team hasn’t yet developed any DevOps capability and is manually dropping changes in an environment that hasn’t been rebuilt since the project kicked off 12 months ago.
+All dependencies should be declared, with no implicit reliance on system tools or libraries.
 
-The product team has one person who has a vague idea of how to get the environment running. Nothing is documented and the run environments require constant attention from the product team. Senior members of the product team are often taken off the project to service other customers and the turn around on technical questions is not timely and getting their full attention is difficult.
 
-Logging is done to files on the virtual machine instances host services rather than using backing services in the environment and there are no dashboards to give an overview of system health.
 
-The solution is unable to scale, and jury-rigged fixes are put in place to get it over the line. Examples of this would be a message queue will be used hosted on the same server that hosts the solution’s web application to reduce processing load of long running requests.
 
-The underlying technologies are not understood and there is no monitoring of changes in those technologies. Open-source projects that are no longer maintained are used as core components of the system.
 
-The project isn’t even complete yet and already the technologies and languages used are several revisions behind. The team are trying to meet their project schedule deadlines so they can take a pay check and walk away from the engagement. There is no maintenance planned or resourced and there is already churn in the team.
 
-## Chaos engineering – has anyone thought about what could go wrong
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Chaos-engineering  has anyone thought about what could go wrong
 
 - Is my Frequently Asked Questions (FAQ) handbook rich enough to get solutions for most of the issues?
 - Are my Standard Operating Procedures (SOPs) comprehensive and well tested to be able to help me when disaster strikes?
@@ -142,3 +168,30 @@ If a meeting with a new vendor consists mostly of talk of their competitors, the
 ### Lack of References
 
 Any time we work with a new vendor, we should conduct background checks and check out references. If the company has a poor background check or/and can’t provide references from recent or current customers or partners, then we should move on.
+
+
+
+## Examples of Good candidates for partnership
+
+A vendor who has had a stable product for some time and is used by a few customers reliably.
+
+They can create new instances of their service for new customers quickly and can recover from chaos and disaster quickly and reliably. This process is scripted for reliability and repeatability. Configuration is managed in the deployment environment.
+
+There are clearly understood and monitored logging features that are streamed to an operations dashboard.
+They have good relationships with their current customers and are now finding that the popularity of their product necessitates a bigger commitment of operational resources.  They know how to instantiate more instances of their product and are keen to leverage our expertise at running environments to let them focus on providing improved features for their customers.
+
+There is a product team with members who have been involved since the product’s inception. They are adding new features but also burning down their technical debt. They are aware of the compromises they have made on the journey to market and have spent some time formulating plans to address these issues. They understand the underlying technologies they have built their system on and monitor those technologies for security advisories and other maintenance issues. They actively patch and upgrade their services and platforms to minimise risk to their customer base.
+
+## Examples of Poor candidates for partnership
+
+The product is completely new and hasn’t been used in a production environment by any customer. The project to create the software may still be underway and features are being presented to the project sponsor at a rapid pace. The team hasn’t yet developed any DevOps capability and is manually dropping changes in an environment that hasn’t been rebuilt since the project kicked off 12 months ago.
+
+The product team has one person who has a vague idea of how to get the environment running. Nothing is documented and the run environments require constant attention from the product team. Senior members of the product team are often taken off the project to service other customers and the turn around on technical questions is not timely and getting their full attention is difficult.
+
+Logging is done to files on virtual machine instances host services rather than using backing services in the environment and there are no dashboards to give an overview of system health.
+
+The solution is unable to scale, and jury-rigged fixes are put in place to get it over the line. Examples of this would include a message queue hosted on the same server that hosts the solution’s web application to reduce processing load of long running requests.
+
+The underlying technologies are not understood and there is no monitoring of changes in those technologies. Open-source projects that are no longer maintained are used as core components of the system.
+
+The project isn’t even complete yet and already the technologies and languages used are several revisions behind. The team are trying to meet their project schedule deadlines so they can take a pay check and walk away from the engagement. There is no maintenance planned or resourced and there is already churn in the team.
